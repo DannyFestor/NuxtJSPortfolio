@@ -1,34 +1,4 @@
-$bgcolor_main: hsl(215, 30%, 20%);
-$bgcolor_secondary: hsl(231, 12%, 21%);
-
-$fontcolor_main: hsl(150, 17%, 90%);
-$fontcolor_secondary: hsl(212, 36%, 85%);
-$fontcolor_warning: hsl(26, 48%, 78%);
-
-$navbar_height: 64px;
-$footer_height: 2.5rem;
-
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-body {
-  background-color: $bgcolor_main;
-  color: $fontcolor_main;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 0.05rem;
-  line-height: 1.6em;
-}
-
-a {
-  color: $fontcolor_secondary;
-  text-decoration: none;
-}
+@import "./defaults";
 
 article {
   margin-top: 20px;
@@ -38,83 +8,8 @@ section {
   margin-top: 50px;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
-.burger-button {
-  position: relative;
-  height: 30px;
-  width: 32px;
-  display: block;
-  z-index: 30;
-  border: 0;
-  border-radius: 0;
-  transition: transform 0.5s;
-}
-
-.burger-bar {
-  background-color: #130f40;
-  position: absolute;
-  top: 50%;
-  right: 6px;
-  left: 6px;
-  height: 2px;
-  width: auto;
-  margin-top: -1px;
-  transition: transform 0.5s, opacity 0.3s, background-color 0.5s;
-}
-
-.burger-1 {
-  -webkit-transform: translateY(-6px);
-  transform: translateY(-6px);
-}
-
-.burger-3 {
-  -webkit-transform: translateY(6px);
-  transform: translateY(6px);
-}
-
-#burger.active .burger-1 {
-  transform: rotate(45deg);
-}
-
-#burger.active .burger-2 {
-  opacity: 0;
-}
-
-#burger.active .burger-3 {
-  transform: rotate(-45deg);
-}
-
-.slide-enter-active,
-.slide-enter-leave {
-  transition: transform 0.2s ease;
-}
-
-.slide-enter,
-.slide-leave-to {
-  transform: translateX(-100%);
-  transition: all 150ms eas-in 0s;
-}
-
-.sidebar-outside {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.sidebar-panel {
-  overflow-y: auto;
-  background-color: #130f40;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  z-index: 20;
-  padding: 3rem 20px 2rem 20px;
-  width: 300px;
-}
+@import "./content";
+@import "./topnav";
+@import "./burger";
+@import "./sidebar";
+@import "./footer";

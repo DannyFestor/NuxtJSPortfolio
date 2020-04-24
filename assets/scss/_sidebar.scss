@@ -1,0 +1,44 @@
+/* SIDE BAR */
+
+#sidebar {
+  position: fixed;
+}
+
+.slide-enter-active,
+.slide-enter-leave {
+  transition: transform 0.2s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(-100%);
+  transition: all 150ms eas-in 0s;
+}
+
+.sidebar-outside {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-panel {
+  overflow-y: auto;
+  background-color: $bgcolor_secondary;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 20;
+  // padding: 3rem 20px 2rem 20px;
+  width: $sidebar_width;
+}
+
+
+// @media only screen and (min-width: $sidebar_width) {
+//   .sidebar-panel {
+//     position: relative;
+//   }
+// }

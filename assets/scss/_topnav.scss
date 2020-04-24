@@ -1,0 +1,17 @@
+#topbar {
+  position: fixed;
+  z-index: 30;
+  width: 100vw;
+  height: $navbar_height;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+
+  >div {
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

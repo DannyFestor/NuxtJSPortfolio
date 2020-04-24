@@ -1,20 +1,25 @@
 <template>
   <div>
-    <Burger />
+    <TopNav />
     <Sidebar />
-    <nuxt />
+    <div id="content">
+      <nuxt />
+      <FooterElement />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import Burger from '~/components/nav/Burger.vue';
+import TopNav from '~/components/nav/TopNav.vue';
 import Sidebar from '~/components/nav/Sidebar.vue';
+import FooterElement from '~/components/FooterElement.vue';
 
 export default Vue.extend({
   components: {
-    Burger,
-    Sidebar
+    TopNav,
+    Sidebar,
+    FooterElement
   }
 });
 </script>

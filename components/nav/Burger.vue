@@ -1,13 +1,8 @@
 <template>
-  <div
-    id="burger"
-    class="burger-button"
-    :class="{ active: isBurgerActive }"
-    @click="toggle"
-  >
-    <span class="burger-bar burger-1"></span>
-    <span class="burger-bar burger-2"></span>
-    <span class="burger-bar burger-3"></span>
+  <div id="burger" :class="{ active: isBurgerActive }" @click="toggle">
+    <div class="burger-bar burger-1"></div>
+    <div class="burger-bar burger-2"></div>
+    <div class="burger-bar burger-3"></div>
   </div>
 </template>
 

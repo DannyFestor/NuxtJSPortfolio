@@ -1,0 +1,40 @@
+$bgcolor_main: hsl(215, 30%, 20%);
+$bgcolor_secondary: hsl(231, 12%, 21%);
+
+$fontcolor_main: hsl(150, 17%, 90%);
+$fontcolor_secondary: hsl(212, 36%, 85%);
+$fontcolor_warning: hsl(26, 48%, 78%);
+
+$navbar_height: 64px;
+$footer_height: 10rem;
+
+$sidebar_width: 300px;
+
+$width_breakpoint: 768px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: $bgcolor_main;
+  color: $fontcolor_main;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.6em;
+  overflow: hidden;
+}
+
+a {
+  color: $fontcolor_secondary;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}

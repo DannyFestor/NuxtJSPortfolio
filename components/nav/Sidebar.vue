@@ -10,6 +10,39 @@
     <transition name="slide">
       <div v-if="showSideBar" class="sidebar-panel">
         {{ width }} {{ can }}
+        <NavElement icon="home" text="start" link-to="/"> </NavElement>
+        <NavElement
+          icon="address-book"
+          text="about"
+          link-to="/about"
+        ></NavElement>
+        <NavElement icon="book-open" text="blog" link-to="/blog"></NavElement>
+        <NavElement
+          icon="laptop-house"
+          text="work"
+          link-to="/work"
+        ></NavElement>
+        <NavElement
+          icon="university"
+          text="education"
+          link-to="/education"
+        ></NavElement>
+        <NavElement
+          icon="laptop-code"
+          text="skills"
+          link-to="/skills"
+        ></NavElement>
+        <NavElement
+          icon="window-restore"
+          text="projects"
+          link-to="/projects"
+        ></NavElement>
+        <NavElement icon="pen" text="contact" link-to="/contact"></NavElement>
+        <NavElement
+          icon="camera"
+          text="hobbies"
+          link-to="/hobbies"
+        ></NavElement>
       </div>
     </transition>
   </div>
@@ -17,13 +50,18 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import NavElement from './NavElement.vue';
 import { store, mutations } from '@/store/store.ts';
 
 export default Vue.extend({
+  components: {
+    NavElement
+  },
   data() {
     return {
       width: 0,
-      can: false
+      can: false,
+      body: ''
     };
   },
   computed: {
@@ -35,17 +73,19 @@ export default Vue.extend({
     },
 
     showPanel() {
-      const body = document.getElementsByTagName('body');
-      if ( this.width < 768 && store.isNavOpen) {
-        body[0].style.overflow = 'hidden';
+      if (this.width < 768 && store.isNavOpen) {
         return true;
       }
-      body[0].style.overflow = 'auto';
       return false;
     },
 
     isPanelOpen() {
       return store.isNavOpen;
+    }
+  },
+  watch: {
+    showPanel() {
+      document.body.style.overflow = this.showPanel ? 'hidden' : '';
     }
   },
   mounted() {
@@ -60,6 +100,6 @@ export default Vue.extend({
     windowResize() {
       this.width = window.innerWidth;
     }
-  },
+  }
 });
 </script>

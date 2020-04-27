@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 0;
-  // margin-top: $navbar_height;
+  margin-top: $navbar_height;
 }
 
 @media only screen and (min-width: $width_breakpoint) {
   #content {
     padding-left: $sidebar_width;
-    // margin-top: 0;
+    margin-top: 0;
   }
 }

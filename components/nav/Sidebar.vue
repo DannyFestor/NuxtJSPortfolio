@@ -35,9 +35,12 @@ export default Vue.extend({
     },
 
     showPanel() {
+      const body = document.getElementsByTagName('body');
       if ( this.width < 768 && store.isNavOpen) {
+        body[0].style.overflow = 'hidden';
         return true;
       }
+      body[0].style.overflow = 'auto';
       return false;
     },
 

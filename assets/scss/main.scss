@@ -1,11 +1,19 @@
 @import "./defaults";
 
+section {
+  margin-top: 50px;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
 article {
   margin-top: 20px;
 }
 
-section {
-  margin-top: 50px;
+article:first-child {
+  margin-top: 0;
 }
 
 @import "./content";

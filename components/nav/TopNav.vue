@@ -1,6 +1,6 @@
 <template>
   <nav id="topbar">
-    <div>
+    <div id="infobanner">
       <h1>festor.info</h1>
     </div>
     <Burger />

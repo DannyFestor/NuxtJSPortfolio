@@ -1,11 +1,7 @@
 <template>
-  <div id="sidebar">
+  <div id="sidebar" @click="closeSidebarPanel">
     {{ width }} {{ can }}
-    <div
-      v-if="showPanel"
-      class="sidebar-outside"
-      @click="closeSidebarPanel"
-    ></div>
+    <div v-if="showPanel" class="sidebar-outside"></div>
 
     <transition name="slide">
       <div v-if="showSideBar" class="sidebar-panel">

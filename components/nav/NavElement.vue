@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="linkTo" class="navitem">
-    <div><font-awesome-icon class="fa-lg" :icon="icon" /> {{ text }}</div>
+    <div class="faicon"><font-awesome-icon class="fa-lg" :icon="icon" /></div><div> {{ text }}</div>
   </nuxt-link>
 </template>
 

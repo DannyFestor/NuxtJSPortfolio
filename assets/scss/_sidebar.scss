@@ -38,9 +38,22 @@
   padding-top: $navbar_height;
 }
 
+.navitem {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  text-transform: uppercase;
+  display: block;
 
-// @media only screen and (min-width: $sidebar_width) {
-//   .sidebar-panel {
-//     position: relative;
-//   }
-// }
+  div {
+    display: inline-block;
+  }
+
+  div.faicon {
+    text-align: center;
+    min-width: 50px;
+  }
+}
+
+.navitem:hover {
+  background: $bgcolor_main;
+}

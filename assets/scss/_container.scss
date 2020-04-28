@@ -1,10 +1,18 @@
-.container {
+main {
   padding-top: $navbar_height;
+
+  section {
+    padding: 15px;
+  }
 }
 
 
 @media only screen and (min-width: $width_breakpoint) {
-  .container {
+  main {
     padding-top: 0;
+
+    section {
+      padding: 35px;
+    }
   }
 }

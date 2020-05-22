@@ -1,18 +1,6 @@
 import path from 'path';
-import glob from 'glob';
-// import fs from 'fs';
-// import Mode from 'frontmatter-markdown-loader/mode';
-
-let files = glob.sync('**/*.md', { cwd: 'content' });
-
-function getSlugs(post, _) {
-  console.log(post + ' ' + _);
-  let slug = post.substr(0, post.lastIndexOf('.'));
-  return `/blog/${slug}`;
-}
 
 export default async () => {
-
   return {
     mode: 'universal',
     /*
@@ -57,7 +45,7 @@ export default async () => {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: ['@nuxtjs/markdownit'],
     /*
      ** Build configuration
      */
@@ -76,7 +64,14 @@ export default async () => {
     },
     generate: {
       routes() {
-        return files.map(getSlugs);
+        const fs = require('fs');
+        const path = require('path');
+        return fs.readdirSync('./assets/content/blog').map((file) => {
+          return {
+            route: `/blog/${path.parse(file).name}`, // Return the slug
+            payload: require(`./assets/content/blog/${file}`)
+          };
+        });
       }
     },
     fontawesome: {
@@ -93,6 +88,9 @@ export default async () => {
           'faPen'
         ]
       }
+    },
+    markdownit: {
+      injected: true
     }
   }
 }

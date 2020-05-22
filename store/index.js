@@ -23,3 +23,14 @@ export const actions = {
     await commit('setBlogPosts', blogPosts);
   }
 };
+
+export const getters = {
+  blogSlugs: state => {
+    return state.blogPosts.map(post => {
+      return {
+        title: post.title,
+        slug: post.slug
+      };
+    });
+  }
+}

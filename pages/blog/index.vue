@@ -4,7 +4,7 @@
     <ul>
       <li v-for="post in blogPosts" :key="post.slug">
         {{ post.slug }}
-        <nuxt-link :to="post.slug">{{ post.title }}</nuxt-link>
+        <nuxt-link :to="post.slug" append>{{ post.title }}</nuxt-link>
       </li>
     </ul>
   </div>

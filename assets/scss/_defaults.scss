@@ -1,21 +1,16 @@
-// $bgcolor_main: hsl(215, 30%, 20%);
-// $bgcolor_secondary: hsl(231, 10%, 20%);
+$bgcolor_main: hsl(218, 19%, 95%);
+$bgcolor_secondary: hsl(231, 17%, 92%);
 
-// $fontcolor_main: hsl(215, 30%, 87%);
-// $fontcolor_secondary: hsl(231, 10%, 87%);
-// $fontcolor_warning: hsl(26, 48%, 78%);
-
-$bgcolor_main: hsl(0, 0%, 98%);
-$bgcolor_secondary: hsl(200, 15%, 90%);
-
-$fontcolor_main: hsl(0, 0%, 10%);
-$fontcolor_secondary: hsl(200, 15%, 10%);
+$fontcolor_main: hsl(218, 19%, 10%);
+$fontcolor_secondary: hsl(231, 17%, 10%);
 $fontcolor_warning: hsl(270, 1%, 32%);
 
+$fontcolor_headline: hsl(225, 17%, 5%);
+$fontcolor_subtitle: hsl(233, 16%, 20%);
 
 
 $navbar_height: 64px;
-$footer_height: 10rem;
+$footer_height: 100px;
 
 $sidebar_width: 300px;
 
@@ -35,9 +30,7 @@ body {
   background-color: $bgcolor_main;
   color: $fontcolor_main;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 0.05rem;
-  line-height: 1.6em;
-  // overflow: hidden;
+  letter-spacing: 0.08rem;
 }
 
 a {

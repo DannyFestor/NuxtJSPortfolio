@@ -1,44 +1,17 @@
 <template>
   <div id="sidebar" @click="closeSidebarPanel">
-    {{ width }} {{ can }}
     <div v-if="showPanel" class="sidebar-outside"></div>
-
     <transition name="slide">
       <div v-if="showSideBar" class="sidebar-panel">
-        {{ width }} {{ can }}
-        <NavElement icon="home" text="start" link-to="/"> </NavElement>
-        <NavElement
-          icon="address-book"
-          text="about"
-          link-to="/about"
-        ></NavElement>
-        <NavElement icon="book-open" text="blog" link-to="/blog"></NavElement>
-        <NavElement
-          icon="laptop-house"
-          text="work"
-          link-to="/work"
-        ></NavElement>
-        <NavElement
-          icon="university"
-          text="education"
-          link-to="/education"
-        ></NavElement>
-        <NavElement
-          icon="laptop-code"
-          text="skills"
-          link-to="/skills"
-        ></NavElement>
+        <NavElement icon="home" text="about" link-to="/"> </NavElement>
         <NavElement
           icon="window-restore"
           text="projects"
           link-to="/projects"
         ></NavElement>
+        <NavElement icon="book-open" text="blog" link-to="/blog"></NavElement>
+        <NavElement icon="archway" text="brücke" link-to="/brucke"></NavElement>
         <NavElement icon="pen" text="contact" link-to="/contact"></NavElement>
-        <NavElement
-          icon="camera"
-          text="hobbies"
-          link-to="/hobbies"
-        ></NavElement>
       </div>
     </transition>
   </div>

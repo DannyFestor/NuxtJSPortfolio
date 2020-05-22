@@ -12,10 +12,10 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "highlight.js": "^10.0.3",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "highlight.js": "^10.0.3",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@nuxt/typescript-build": "^0.6.0",

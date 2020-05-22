@@ -16,6 +16,23 @@ article:first-child {
   margin-top: 0;
 }
 
+.headline {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $fontcolor_headline;
+  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $fontcolor_subtitle;
+}
+
+.skill-overview {
+  display: flex;
+}
+
 @import "./content";
 @import "./container";
 @import "./topnav";

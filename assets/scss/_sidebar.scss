@@ -38,6 +38,15 @@
   padding-top: $navbar_height;
 }
 
+@media only screen and (min-width: $width_breakpoint) {
+  .sidebar-panel {
+    padding-top: 100px;
+    a {
+      padding: 20px 0 20px 0;
+    }
+  }
+}
+
 .navitem {
   width: 100%;
   padding: 10px 0 10px 10px;

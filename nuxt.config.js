@@ -81,14 +81,13 @@ export default async () => {
       icons: {
         solid: [
           'faHome',
-          'faAddressBook',
+          'faArchway',
           'faBookOpen',
-          'faLaptopHouse',
-          'faUniversity',
-          'faLaptopCode',
           'faWindowRestore',
-          'faCamera',
-          'faPen'
+          'faPen',
+        ],
+        brands: [
+          'faJsSquare'
         ]
       }
     },

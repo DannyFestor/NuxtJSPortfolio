@@ -33,7 +33,10 @@ export default async () => {
     /*
      ** Global CSS
      */
-    css: ['@/assets/scss/main.scss'],
+    css: [
+      '@/assets/scss/main.scss',
+      'node_modules/highlight.js/styles/github.css'
+    ],
     /*
      ** Plugins to load before mounting the App
      */
@@ -90,7 +93,16 @@ export default async () => {
       }
     },
     markdownit: {
-      injected: true
+      injected: true,
+      highlight(str, lang) {
+        const hljs = require('highlight.js');
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(lang, str, true).value;
+          } catch (_) {}
+        }
+        return '';
+      }
     }
   }
 }

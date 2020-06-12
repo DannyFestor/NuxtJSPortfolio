@@ -13,3 +13,9 @@ section:first-child {
     width: $desktop_width;
   }
 }
+
+@media only screen and (min-width: $width_breakpoint_large) {
+  section {
+    width: $desktop_width_large;
+  }
+}

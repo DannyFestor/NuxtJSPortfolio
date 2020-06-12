@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: $width_breakpoint) {
   #topbar {
-    background: $bgcolor_secondary;
+    background: rgba($bgcolor_secondary, 0.9);
     width: 100vw;
   }
 }

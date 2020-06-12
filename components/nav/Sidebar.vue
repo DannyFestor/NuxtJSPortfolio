@@ -35,14 +35,14 @@ export default Vue.extend({
   },
   computed: {
     showSideBar() {
-      if (this.width >= 768 || store.isNavOpen) {
+      if (this.width >= 600 || store.isNavOpen) {
         return true;
       }
       return false;
     },
 
     showPanel() {
-      if (this.width < 768 && store.isNavOpen) {
+      if (this.width < 600 && store.isNavOpen) {
         return true;
       }
       return false;

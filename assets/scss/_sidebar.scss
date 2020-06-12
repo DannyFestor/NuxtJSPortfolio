@@ -27,7 +27,7 @@
 
 .sidebar-panel {
   overflow-y: auto;
-  background-color: $bgcolor_secondary;
+  background-color: rgba($bgcolor_secondary, 0.9);
   position: fixed;
   left: 0;
   top: 0;

@@ -20,3 +20,11 @@
     }
   }
 }
+
+@media only screen and (min-width: $width_breakpoint_large) {
+  #hero {
+    article {
+      width: $desktop_width_large;
+    }
+  }
+}

@@ -12,11 +12,13 @@ $fontcolor_subtitle: hsl(233, 16%, 20%);
 $navbar_height: 64px;
 $footer_height: 100px;
 
-$sidebar_width: 300px;
+$sidebar_width: 200px;
 $mobile_width: 95%;
-$desktop_width: 75%;
+$desktop_width: 85%;
+$desktop_width_large: 75%;
 
-$width_breakpoint: 768px;
+$width_breakpoint: 600px;
+$width_breakpoint_large: 1100px;
 
 * {
   box-sizing: border-box;

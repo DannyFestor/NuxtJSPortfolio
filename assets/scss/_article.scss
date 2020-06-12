@@ -2,6 +2,8 @@ article {
   margin-top: 0;
 }
 
-article:first-child {
-  margin-top: 0;
+article.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

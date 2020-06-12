@@ -87,7 +87,11 @@ export default async () => {
           'faPen',
         ],
         brands: [
-          'faJsSquare'
+          'faJsSquare',
+          'faHtml5',
+          'faCss3Alt',
+          'faNode',
+          'faVuejs'
         ]
       }
     },

@@ -34,7 +34,7 @@ export default async () => {
      ** Global CSS
      */
     css: [
-      '@/assets/scss/main.scss',
+      '@/assets/scss/style.scss',
       'node_modules/highlight.js/styles/github.css'
     ],
     /*

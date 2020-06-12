@@ -13,10 +13,18 @@ $navbar_height: 64px;
 $footer_height: 100px;
 
 $sidebar_width: 300px;
+$mobile_width: 95%;
+$desktop_width: 70%;
 
 $width_breakpoint: 768px;
 
-html, body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,5 +47,5 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+  margin: 0;
 }

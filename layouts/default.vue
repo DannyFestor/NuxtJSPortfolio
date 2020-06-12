@@ -2,10 +2,10 @@
   <div>
     <TopNav />
     <Sidebar />
-    <div id="content">
+    <main id="content">
       <nuxt />
       <FooterElement />
-    </div>
+    </main>
   </div>
 </template>
 

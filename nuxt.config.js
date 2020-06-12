@@ -91,7 +91,9 @@ export default async () => {
           'faHtml5',
           'faCss3Alt',
           'faNode',
-          'faVuejs'
+          'faVuejs',
+          'faPhp',
+          'faLaravel'
         ]
       }
     },

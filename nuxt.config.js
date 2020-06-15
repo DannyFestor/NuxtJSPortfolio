@@ -50,7 +50,11 @@ export default async () => {
       [
         '@nuxtjs/google-analytics',
         {
-          id: 'UA-169387423-1'
+          id: 'UA-169387423-1',
+          debug: {
+            enabled: true,
+            sendHitTask: true
+          }
         }
       ]
     ],

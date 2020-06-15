@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <p class="subtitle">
-      PROJECTS
+      My Projects
     </p>
     <article>
       <div class="card">

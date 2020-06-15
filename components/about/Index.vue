@@ -1,6 +1,8 @@
 <template>
   <section id="about">
-    About me
+    <p class="subtitle">
+      What I do
+    </p>
     <web></web>
     <datascience></datascience>
   </section>

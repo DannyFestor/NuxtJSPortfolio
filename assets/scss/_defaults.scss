@@ -1,18 +1,19 @@
-$bgcolor_main: hsl(218, 19%, 95%);
+$bgcolor_main: hsl(216, 30%, 92%);
 $bgcolor_secondary: hsl(231, 17%, 92%);
 
-$fontcolor_main: hsl(218, 19%, 10%);
-$fontcolor_secondary: hsl(231, 17%, 10%);
+$fontcolor_main: hsl(218, 19%, 30%);
+$fontcolor_secondary: hsl(231, 17%, 30%);
 $fontcolor_warning: hsl(270, 1%, 32%);
 
-$fontcolor_headline: hsl(225, 17%, 5%);
-$fontcolor_subtitle: hsl(233, 16%, 20%);
+$fontcolor_headline: hsl(225, 39%, 20%);
+$fontcolor_subtitle: hsl(233, 36%, 30%);
 
 
 $navbar_height: 64px;
 $footer_height: 100px;
 
-$sidebar_width: 200px;
+$sidebar_width: 300px;
+$sidebar_width_large: 200px;
 $mobile_width: 95%;
 $desktop_width: 85%;
 $desktop_width_large: 75%;
@@ -26,7 +27,7 @@ $width_breakpoint_large: 1100px;
   padding: 0;
 }
 
-html, body, {
+html, body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,6 +35,7 @@ html, body, {
   font: inherit;
   vertical-align: baseline;
   min-height: 100vh;
+  height: fit-content;
 }
 
 body {

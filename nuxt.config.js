@@ -93,7 +93,8 @@ export default async () => {
           'faNode',
           'faVuejs',
           'faPhp',
-          'faLaravel'
+          'faLaravel',
+          'faGithubSquare'
         ]
       }
     },

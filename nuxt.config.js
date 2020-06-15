@@ -47,11 +47,13 @@ export default async () => {
     buildModules: [
       '@nuxt/typescript-build',
       '@nuxtjs/fontawesome',
-      '@nuxtjs/gtm'
+      [
+        '@nuxtjs/google-analytics',
+        {
+          id: 'UA-169387423-1'
+        }
+      ]
     ],
-    gtm: {
-      id: 'UA-169387423-1'
-    },
     /*
      ** Nuxt.js modules
      */

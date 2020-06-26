@@ -1,10 +1,8 @@
 <template>
-  <main id="container">
-    <article>
-      <h1>{{ blogPost.title }}</h1>
-      <div v-html="$md.render(blogPost.body)"></div>
-    </article>
-  </main>
+  <section id="blog">
+    <h1>{{ blogPost.title }}</h1>
+    <div v-html="$md.render(blogPost.body)"></div>
+  </section>
 </template>
 <script>
 export default {

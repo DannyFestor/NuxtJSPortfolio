@@ -1,5 +1,5 @@
 $bgcolor_main: hsl(216, 30%, 92%);
-$bgcolor_secondary: hsl(231, 17%, 92%);
+$bgcolor_secondary: hsl(207, 61%, 90%);
 
 $fontcolor_main: hsl(218, 19%, 30%);
 $fontcolor_secondary: hsl(231, 17%, 30%);
@@ -52,4 +52,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+#__nuxt, #__layout {
+  min-height: 100vh;
 }

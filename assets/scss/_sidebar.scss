@@ -33,15 +33,16 @@
   top: 0;
   height: 100vh;
   z-index: 20;
-  // padding: 3rem 20px 2rem 20px;
   width: $sidebar_width;
-  padding-top: $navbar_height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (min-width: $width_breakpoint) {
   .sidebar-panel {
-    padding-top: 100px;
     width: $sidebar_width_large;
+    background: linear-gradient(90deg, $bgcolor_secondary 75%, $bgcolor_main 100%);
     a {
       padding: 20px 0 20px 0;
     }

@@ -1,9 +1,0 @@
-main {
-  padding-top: $navbar_height;
-}
-
-@media only screen and (min-width: $width_breakpoint) {
-  main {
-    padding-top: 0;
-  }
-}

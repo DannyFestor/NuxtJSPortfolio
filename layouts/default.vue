@@ -1,36 +1,16 @@
 <template>
   <div>
-    <TopNav />
-    <Sidebar />
-    <main id="content">
-      <nuxt />
-      <FooterElement />
-    </main>
+    <Navbar></Navbar>
+    <Nuxt />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import TopNav from '~/components/nav/TopNav.vue';
-import Sidebar from '~/components/nav/Sidebar.vue';
-import FooterElement from '~/components/FooterElement.vue';
+<script>
+import Navbar from '../components/Navigation/Navbar'
 
-export default Vue.extend({
+export default {
   components: {
-    TopNav,
-    Sidebar,
-    FooterElement
-  },
-  head() {
-    return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
-      ]
-    };
+    Navbar
   }
-});
+}
 </script>
-
-<style>
-
-</style>

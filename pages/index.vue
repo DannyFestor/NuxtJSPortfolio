@@ -1,24 +1,18 @@
 <template>
-  <div>
-    <hero></hero>
-    <about></about>
-    <projects></projects>
-    <contact></contact>
-  </div>
+  <main>
+    <Hero />
+    <Web />
+  </main>
 </template>
 
 <script>
-import hero from '../components/hero';
-import about from '../components/about/Index';
-import projects from '../components/projects/index';
-import contact from '../components/contact';
+import Hero from '../components/Index/hero'
+import Web from '../components/Index/web'
 
 export default {
   components: {
-    hero,
-    about,
-    projects,
-    contact
+    Hero,
+    Web
   }
 }
 </script>

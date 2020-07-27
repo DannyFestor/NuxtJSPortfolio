@@ -1,6 +1,0 @@
-{
-  "date": "2020-05-22T04:10:11.948Z",
-  "title": "Test if syntax highlighting works by default",
-  "description": "Test if syntax highlighting works by default",
-  "body": "``` python\narray = ['this', 'is', 'a', 'test']\n\nfor i, entry in enumerate(array):\n  print(i, entry)\n```\n\n``` javascript\nfunction(req, res, nex) {\n  console.log(req.body)\n  next()\n}\n```"
-}
